@@ -1,0 +1,16 @@
+[package]
+name = "enxame-view"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.89.0"
+license = "MIT"
+description = "ENXAME shared view-model — the typed snapshot every face (web, gui, tui, cli, rpc) renders"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+
+[dev-dependencies]
+serde_json = "1"
+
+[lints.clippy]
+pedantic = "warn"
