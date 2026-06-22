@@ -38,7 +38,11 @@ impl Snapshot {
     /// An empty snapshot (the GUIs' initial / daemon-offline state).
     #[must_use]
     pub fn empty() -> Self {
-        Self { torrents: Vec::new(), down_rate: 0, up_rate: 0 }
+        Self {
+            torrents: Vec::new(),
+            down_rate: 0,
+            up_rate: 0,
+        }
     }
 
     /// How many of the managed torrents are fully downloaded.
